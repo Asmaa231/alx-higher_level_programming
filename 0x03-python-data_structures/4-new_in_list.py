@@ -4,5 +4,5 @@ def new_in_list(my_list, idx, element):
         return my_list
 
     my_list_cp = my_list.cp()
-    my_list_cp(idx) = element
+    my_list_cp[idx] = element
     return my_list_cp
