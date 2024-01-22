@@ -2,6 +2,6 @@
 def max_integer(my_list=[]):
     if len(my_list) < 1:
         return None
-    my_list_cp = my_list.copy()
-    my_list_cp.sort()
-    return  my_list_cp[-1]
+    list_cp = my_list.copy()
+    list_cp.sort()
+    return  list_cp[-1]
