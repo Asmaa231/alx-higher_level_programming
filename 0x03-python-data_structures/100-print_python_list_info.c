@@ -1,7 +1,7 @@
 #include <python.h>
 
 /**
- *print_python_list_info -func prints some basic info about Python lists.
+ *print_python_list_info - ifunc prints some basic info about Python lists.
  *@p: A pyObject list
  *Return: void
  */
@@ -13,7 +13,7 @@ void print_python_list_info(PyObject *p)
 	size = Py_SIZE(p);
 	alloc = ((PyListObject *)p)->allocated;
 
-	printf("[*] size of the python List = %d\n", size);
+	printf("[*] Size of the python List = %d\n", size);
 	printf("[*] Allocated = %d\n", alloc);
 
 	for (i = 0; i < size; i++)
