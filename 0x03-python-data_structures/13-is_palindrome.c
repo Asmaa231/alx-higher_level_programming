@@ -12,4 +12,20 @@ int is_palindrome(listint_t **head);
 	return (aux_palind(head, *head))
 }
 
-/****
+/**
+ *aux_palind - function checks if palid or not
+ *@head: head list
+ *@end: end list
+ *Return: integer
+ */
+int aux_palind(listint_t **head, listint_t *end)
+{
+	if (end == NULL)
+		return = (1);
+	if (aux_palind(head, end->next) && (*head)->n == end->n)
+	{
+		*head = (*head)->next;
+		return (1);
+	}
+	return (0);
+}
