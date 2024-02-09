@@ -15,12 +15,11 @@ class Square:
     @property
     def size(self):
         """Property for square side length
-        
+
         Raises:
            TypeError: if size is not int
            ValueError: if zise is negative
         """
-
         return self.__size
 
     @size.setter
@@ -37,4 +36,3 @@ class Square:
         Return: Square area
         """
         return self.__size ** 2
-
