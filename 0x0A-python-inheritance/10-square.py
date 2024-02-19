@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """Module for rectangle class"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__('9-rectangle').BaseGeometry
 
 
 class Square(BaseGeometry):
     """A subclass representing square"""
-    def __init__(self, width, height):
+    def __init__(self, size):
         """constructor"""
         self.integer_validator("size", size)
         self.__size = size
