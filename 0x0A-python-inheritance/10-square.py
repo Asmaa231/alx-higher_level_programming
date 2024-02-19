@@ -9,7 +9,7 @@ class Square(BaseGeometry):
         """constructor"""
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(self, size)
+        super().__init__(size, size)
 
     def area(self):
         """methode return square area"""
