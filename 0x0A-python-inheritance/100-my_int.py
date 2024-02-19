@@ -3,11 +3,11 @@
 
 
 
-class Myint:
+class MyInt(int):
     """rebel version of int"""
     def __new__(cls, *args, **kwargs):
         """creats new instance for the class"""
-        return super(Myint, cls).__new__(cls, *args, **kwargs)
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
     def__eq__(self, other):
         """what was != is == now"""
