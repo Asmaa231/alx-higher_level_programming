@@ -14,7 +14,8 @@ class Student:
         """return a dic representation of student,
         If attrs is a list of strings,
         only attribute names contained in this list must be retrieved.
-        Otherwise, all attributes must be retrieved"""
+        Otherwise, all attributes must be retrieved
+        """
         try:
             for attr in attrs:
                 if type(attr) is not str:
