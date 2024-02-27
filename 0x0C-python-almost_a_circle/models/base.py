@@ -23,3 +23,11 @@ Class Base:
             return "[]"
         else:
             return dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save josnified odj to file"""
+        if list_objs is not None:
+            list_objs = [o.dictionary() for o in list_objs]
+        with open("().join".format(cls.__name_), "w", encoding="utf-8") as f:
+            f.write(cls.to_join_string(lists_objs))
